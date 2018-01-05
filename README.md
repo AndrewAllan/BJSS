@@ -50,14 +50,6 @@ when a test fails it should take a screenshot and store it in the location ./err
 
 i have used log4j for loggin purposes i have set it to output both to file and to console
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [testNG](http://testng.org/docs/) - Testing Framework
@@ -70,5 +62,5 @@ Add additional notes about how to deploy this on a live system
 
 * some page object classes might only have one locator this was done purely from a forward thinking perspective if it was a real project
 * within test 2 it was specified that i select the order created in test 1 by date and time but only date was displayed because of this
-if more than one order is made on that date the test would fail as the for loop would have more than one web element due to this i have selected the first element displayed which is always the newest i have also coded finding the order by date only
+if more than one order is made on that date the locator of date wouldnt be eniqe because of this i have selected the first instance of the chosen date.
 * within test 1 i was asked to verify the price and size of each item i made the asserts user input as opposed to carrying the values from the quickview
