@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41867" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:42Z">
+  <suite name="Default suite" duration-ms="20720" started-at="2018-01-05T09:36:00Z" finished-at="2018-01-05T09:36:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41867" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:42Z">
-      <class name="bjss.test.testCase.TestCase1">
-        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="before" is-config="true" duration-ms="9272" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:09Z">
+    <test name="Default test" duration-ms="20720" started-at="2018-01-05T09:36:00Z" finished-at="2018-01-05T09:36:21Z">
+      <class name="bjss.test.testCase.TestCase2">
+        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase2@13805618]" name="before" is-config="true" duration-ms="9991" started-at="2018-01-05T09:36:00Z" finished-at="2018-01-05T09:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="test1" duration-ms="31744" started-at="2018-01-05T05:10:09Z" finished-at="2018-01-05T05:10:41Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:bjss.test.testCase.TestCase2@13805618]" name="test2" duration-ms="9866" started-at="2018-01-05T09:36:10Z" finished-at="2018-01-05T09:36:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="tearDown" is-config="true" duration-ms="194" started-at="2018-01-05T05:10:41Z" finished-at="2018-01-05T05:10:41Z">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase2@13805618]" name="tearDown" is-config="true" duration-ms="214" started-at="2018-01-05T09:36:20Z" finished-at="2018-01-05T09:36:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestCase1.test1()[pri:0, instance:bjss.test.testCase.TestCase1@13805618] output={null}]]]>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestCase2.test2()[pri:0, instance:bjss.test.testCase.TestCase2@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="afterTest" is-config="true" duration-ms="646" started-at="2018-01-05T05:10:41Z" finished-at="2018-01-05T05:10:42Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase2@13805618]" name="afterTest" is-config="true" duration-ms="637" started-at="2018-01-05T09:36:21Z" finished-at="2018-01-05T09:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- bjss.test.testCase.TestCase1 -->
+      </class> <!-- bjss.test.testCase.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

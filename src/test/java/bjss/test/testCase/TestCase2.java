@@ -2,7 +2,6 @@ package bjss.test.testCase;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import Utilities.ExtentFactory;
 import Utilities.Screenshots;
 import bjss.test.browsers.Chrome;
+import bjss.test.pages.MyAccount;
 import bjss.test.pages.OrderHistory;
 import bjss.test.pages.Signin;
 
@@ -38,7 +38,8 @@ public class TestCase2 {
 
 	@Test
 	public void test2() throws InterruptedException {
-		driver.findElement(By.xpath(".//*[@id='center_column']/div/div[1]/ul/li[1]/a/span")).click();
+		MyAccount myAccount = new MyAccount(driver,test);
+		myAccount.clickOrderHistory();
 		Thread.sleep(2000);
 		OrderHistory orderHistory = new OrderHistory(driver, test);
 		orderHistory.findOrderByDate("12/31/2017");
