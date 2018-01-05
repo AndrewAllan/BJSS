@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BJSS Test Suit" verbose="1" >
+  <test name="Test Example 1" >
+    <classes>
+       <class name="bjss.test.testCase.TestCase1" />
+    </classes>
+  </test>
+  <test name="Test Example 2">
+    <classes>
+      <class name="bjss.test.testCase.TestCase2"/>
+    </classes>
+  </test>
+   <test name="Test Example 3">
+    <classes>
+      <class name="bjss.test.testCase.TestCase3"/>
+    </classes>
+  </test>
+   <test name="Test Example 4">
+    <classes>
+      <class name="bjss.test.testCase.CRUD"/>
+    </classes>
+  </test>
+</suite>

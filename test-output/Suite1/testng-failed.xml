@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Test Example 1">
+    <classes>
+      <class name="bjss.test.testCase.TestCase1"/>
+    </classes>
+  </test> <!-- Test Example 1 -->
+  <test name="Test Example 2">
+    <classes>
+      <class name="bjss.test.testCase.TestCase2"/>
+      <class name="bjss.test.testCase.TestCase3"/>
+    </classes>
+  </test> <!-- Test Example 2 -->
+  <test name="Test Example 2(failed)">
+    <classes>
+      <class name="bjss.test.testCase.TestCase2">
+        <methods>
+          <include name="before"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- bjss.test.testCase.TestCase2 -->
+      <class name="bjss.test.testCase.TestCase3">
+        <methods>
+          <include name="test3"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="before"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- bjss.test.testCase.TestCase3 -->
+      <class name="bjss.test.testCase.TestCase1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bjss.test.testCase.TestCase1 -->
+    </classes>
+  </test> <!-- Test Example 2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
