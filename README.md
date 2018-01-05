@@ -1,6 +1,6 @@
 # BJSS
 
-This is the repo for the demo test automation for BJSS
+This is the demo test automation requested by BJSS the automation was developed in java
 
 ## Getting Started
 
