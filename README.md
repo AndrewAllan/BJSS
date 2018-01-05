@@ -1,18 +1,19 @@
 # BJSS
+
 This is the repo for the demo test automation for BJSS
 
 ## Getting Started
 
 download the project source from the repo - https://github.com/AndrewAllan/BJSS.git
-import the maven project into the eclipse IDE
 
- 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+import the maven project into the eclipse IDE
 
 ### Prerequisites
 
-Eclipse IDE is installed 
-JDK 
+Eclipse IDE
+JDK
+Chrome webBrowser
+Maven
 
 ## Running the tests
 TEST 1:  HAPPY PATH, PURCHASE 2 ITEMS = (right click the class TestCase1 and select testNG to run the 1st test)
@@ -38,17 +39,19 @@ TO RUN ALL TESTS RIGHT CLICK THE XML FILE TestSuit.xml AND RUN AS TESTNG SUIT
 
 ### Reporting
 
-the reporting i have used is extent reporting the file output can be found in the reporting folder 
+The standard testNG report can be found in the test-output folder/
 
-Note: the file should be moved or deleted after each run if this is not done the testcases will continue to be added to the same report
+Extent reporting can be found in the Reports folder.
+
+Note: for the Extent reports the file should be moved or deleted after each run if this is not done the testcases will continue to be added to the same report.
 
 ### ScreenShots
 
-when a test fails it should take a screenshot and store it in the location ./errorScreenshots the screen shot should also be added to the extent report.
+When a test fails it should take a screenshot and store it in the location ./errorScreenshots the screen shot should also be added to the extent report.
 
 ### logging
 
-i have used log4j for loggin purposes i have set it to output both to file and to console
+I have used log4j for logging purposes i have set it to output both to file(test.log) and to console
 
 ## Built With
 
@@ -60,7 +63,7 @@ i have used log4j for loggin purposes i have set it to output both to file and t
 
 ## Known issues
 
-* some page object classes might only have one locator this was done purely from a forward thinking perspective if it was a real project
-* within test 2 it was specified that i select the order created in test 1 by date and time but only date was displayed because of this
-if more than one order is made on that date the locator of date wouldnt be eniqe because of this i have selected the first instance of the chosen date.
-* within test 1 i was asked to verify the price and size of each item i made the asserts user input as opposed to carrying the values from the quickview
+* Some page object classes might only have one locator this was done purely from a forward-thinking perspective as there are more locators available on screen they just weren’t required for the tests.
+* Within test 2 and 3 was specified that I select the order by date and time but on screen only the date is displayed because of this I have set it to select the first element on the matching date.
+*The menu class has the locators for both the menu in the heading and the menu for navigation I would normally split these out into separate classes but due to the fact I won’t be building on it I didn’t think it was required.
+
