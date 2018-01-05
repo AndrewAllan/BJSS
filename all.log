@@ -1,0 +1,22 @@
+2018-01-05 05:10:08.377 [main] INFO  bjss.test.pages.Signin - Signin -- email address was entered
+2018-01-05 05:10:08.461 [main] INFO  bjss.test.pages.Signin - Signin -- password was entered
+2018-01-05 05:10:09.920 [main] INFO  bjss.test.pages.Signin - Signin -- signin button was clicked
+2018-01-05 05:10:16.790 [main] INFO  bjss.test.pages.Woman - Womans Clothing -- item 1 quick view was clicked
+2018-01-05 05:10:17.909 [main] INFO  bjss.test.pages.ItemQuickView - Quick view - size L has been selected from size dropdown
+2018-01-05 05:10:19.032 [main] INFO  bjss.test.pages.ItemQuickView - Quick view - the add to cart button has been pressed
+2018-01-05 05:10:22.133 [main] INFO  bjss.test.pages.ItemQuickView - Quick view - the continue shopping button has been pressed
+2018-01-05 05:10:25.574 [main] INFO  bjss.test.pages.Woman - Womans Clothing -- item 2 quick view was clicked
+2018-01-05 05:10:27.715 [main] INFO  bjss.test.pages.ItemQuickView - Quick view - the add to cart button has been pressed
+2018-01-05 05:10:32.248 [main] INFO  bjss.test.pages.ItemQuickView - Quick view - the checkout button has been pressed
+2018-01-05 05:10:33.347 [main] INFO  bjss.test.pages.Summary - Order Summary - checked that item 2 size matches  S
+2018-01-05 05:10:33.392 [main] INFO  bjss.test.pages.Summary - Order Summary - checked that item 1 price matches  16.51
+2018-01-05 05:10:33.440 [main] INFO  bjss.test.pages.Summary - Order Summary - checked that item 2 price matches  27.00
+2018-01-05 05:10:33.519 [main] INFO  bjss.test.pages.Summary - Order Summary - checked that the price of all items matches the total products
+2018-01-05 05:10:33.613 [main] INFO  bjss.test.pages.Summary - Order Summary - checked that the items plus the shipping matches the final total
+2018-01-05 05:10:34.784 [main] INFO  bjss.test.pages.Summary - Order Summary - clicked procced to checkout
+2018-01-05 05:10:35.980 [main] INFO  bjss.test.pages.Address - Address - Procced to check out button pressed
+2018-01-05 05:10:36.044 [main] INFO  bjss.test.pages.Shipping - Shipping - the terms and conditions check box has been clicked
+2018-01-05 05:10:37.293 [main] INFO  bjss.test.pages.Shipping - Shipping - the procced to checkout button has been clicked
+2018-01-05 05:10:38.240 [main] INFO  bjss.test.pages.Payment - Payment - the pay by wire option has been clicked
+2018-01-05 05:10:39.810 [main] INFO  bjss.test.pages.Payment - Payment - the confirm order button has been clicked
+2018-01-05 05:10:41.676 [main] INFO  bjss.test.pages.Menu - User Menu - the sign out menu opption has been clicked

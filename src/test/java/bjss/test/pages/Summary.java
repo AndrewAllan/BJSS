@@ -50,24 +50,28 @@ public class Summary {
 	@FindBy(xpath = ".//*[@id='center_column']/p[2]/a[1]/span")
 	WebElement BtnProccedToCheckOut;
 	
+	//checks the size for item 1 displayed matches the user input
 	public void checkItem1Size(String sizeIn){
 		Assert.assertEquals(sizeIn, item1size.getText().substring(item1size.getText().length() -1));
 		test.log(LogStatus.PASS, "check that item 1 size matches "+" "+sizeIn);
 		//log.info("Order Summary - checked that item 1 size matches "+" "+sizeIn);
 	}
 	
+	//checks the size for item 2 displayed matches the user input
 	public void checkItem2Size(String sizeIn){
 		Assert.assertEquals(sizeIn, item2size.getText().substring(item2size.getText().length() -1));
 		test.log(LogStatus.PASS, "check that item 2 size matches "+" "+sizeIn);
 		log.info("Order Summary - checked that item 2 size matches "+" "+sizeIn);
 	}
 		
+	//checks the price for item 1 displayed matches the user input
 	public void checkItem1Price(String priceIn){
 		Assert.assertEquals(priceIn, item1price.getText().substring(1, item1price.getText().length()));
 		test.log(LogStatus.PASS, "check that item 1 price matches "+" "+priceIn);
 		log.info("Order Summary - checked that item 1 price matches "+" "+ priceIn);
 	}
 	
+	//checks the price for item 2 displayed matches the user input
 	public void checkItem2Price(String priceIn){
 		Assert.assertEquals(priceIn, item2price.getText().substring(1, item2price.getText().length()));
 		test.log(LogStatus.PASS, "check that item 2 price matches "+" "+priceIn);
@@ -77,6 +81,8 @@ public class Summary {
 	public double convertToDouble(String priceIn){
 		return Double.parseDouble(priceIn.substring(1, priceIn.length()));
 	}
+	
+	//checks the price of item 1 and 2 matches the value in products
 	public void checkTotalProductsPrice(){
 		double productPrice = convertToDouble(item2price.getText()) + convertToDouble(item1price.getText());
 		Assert.assertEquals(totalProducts.getText().substring(1, totalProducts.getText().length()), df.format(productPrice));
@@ -84,6 +90,7 @@ public class Summary {
 		log.info("Order Summary - checked that the price of all items matches the total products");
 	}
 	
+	//checks the value in the prodcuts and shipping matches the total price
 	public void checkFinalTotal(){
 		double ProductAndShipping = convertToDouble(totalProducts.getText()) + convertToDouble(totalShipping.getText());
 		Assert.assertEquals(totalPrice.getText().substring(1, totalProducts.getText().length()), df.format(ProductAndShipping));
@@ -91,6 +98,7 @@ public class Summary {
 		log.info("Order Summary - checked that the items plus the shipping matches the final total");
 	}
 	
+	//clicks the procced to check out button
 	public void clickProccedToCheckOut(){
 		BtnProccedToCheckOut.click();
 		test.log(LogStatus.PASS, "click the procced to checkout button");

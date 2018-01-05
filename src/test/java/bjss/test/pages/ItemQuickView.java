@@ -34,6 +34,7 @@ public class ItemQuickView {
 	@FindBy(xpath = ".//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
 	WebElement BtnCheckout;
 	
+	//selects the item size from dropdown
 	public void selectSize(String sizeIn){
 		Select dropDownList = new Select(drpSize);		
 		dropDownList.selectByVisibleText(sizeIn);	
@@ -41,6 +42,7 @@ public class ItemQuickView {
 		log.info("Quick view - size" +" "+ sizeIn +" "+ "has been selected from size dropdown");
 	}
 	
+	//clicks the add to cart
 	public void addToCart(){
 		BtnAddToCart.click();
 		driver.switchTo().parentFrame();
@@ -48,12 +50,14 @@ public class ItemQuickView {
 		log.info("Quick view - the add to cart button has been pressed");
 	}
 	
+	//clicks the continue shopping button 
 	public void continueShopping(){
 		BtnContinueShopping.click();
 		test.log(LogStatus.PASS, "click continue shopping");
 		log.info("Quick view - the continue shopping button has been pressed");
 	}
 	
+	//clicks the checkout button
 	public void checkout(){
 		BtnCheckout.click();
 		test.log(LogStatus.PASS, "click checkout");

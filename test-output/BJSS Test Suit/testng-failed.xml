@@ -30,13 +30,6 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- bjss.test.testCase.TestCase2 -->
-      <class name="bjss.test.testCase.TestCase1">
-        <methods>
-          <include name="afterTest"/>
-          <include name="before"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- bjss.test.testCase.TestCase1 -->
       <class name="bjss.test.testCase.TestCase3">
         <methods>
           <include name="tearDown"/>
@@ -51,6 +44,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- bjss.test.testCase.CRUD -->
+      <class name="bjss.test.testCase.TestCase1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="before"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- bjss.test.testCase.TestCase1 -->
     </classes>
   </test> <!-- Test Example 3(failed) -->
 </suite> <!-- Failed suite [BJSS Test Suit] -->

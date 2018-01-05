@@ -28,12 +28,14 @@ public class Shipping {
 	@FindBy(name = "processCarrier")
 	WebElement BtnProccedToCheckOut;
 	
+	//checks the terms and conditions check box
 	public void clickTandC(){
 		CkBoxTandC.click();
 		test.log(LogStatus.PASS, "check the check box for terms and conditions");
 		log.info("Shipping - the terms and conditions check box has been clicked");
 	}
 	
+	//clicks the proceed to checkout
 	public void clickProccedToCheckout(){
 		BtnProccedToCheckOut.click();
 		test.log(LogStatus.PASS, "click the procced to checkout");

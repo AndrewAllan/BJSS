@@ -26,7 +26,7 @@ public class CRUD {
 	}
 	@Test
 	public void Get(){
-		System.out.println(get("https://reqres.in/api/users/2").toString());
+		//System.out.println(get("https://reqres.in/api/users/2").toString());
 		get("https://reqres.in/api/users/2").then().assertThat().body("data.first_name", equalTo("Janet"));	
 		log.info("using get to checked that user returned with id 2 is Janet");
 		test.log(LogStatus.PASS, "use get to check that user returned with id 2 is Janet");

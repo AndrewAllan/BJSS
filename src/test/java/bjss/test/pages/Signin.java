@@ -30,6 +30,7 @@ public class Signin {
 	@FindBy(name = "SubmitLogin")
 	public WebElement btnSignin;
 	
+	//enters the username and email and presses the sign in button
 	public void signin(String emailIn,String passwordIn){
 		txtEmail.sendKeys(emailIn);
 		log.info("Signin -- email address"+" "+"was entered");

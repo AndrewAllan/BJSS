@@ -1,199 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="7" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="BJSS Test Suit" duration-ms="94744" started-at="2018-01-04T20:19:38Z" finished-at="2018-01-04T20:21:13Z">
+  <suite name="Default suite" duration-ms="41867" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:42Z">
     <groups>
     </groups>
-    <test name="Test Example 1" duration-ms="46486" started-at="2018-01-04T20:19:38Z" finished-at="2018-01-04T20:20:25Z">
+    <test name="Default test" duration-ms="41867" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:42Z">
       <class name="bjss.test.testCase.TestCase1">
-        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase1@3159c4b8]" name="before" is-config="true" duration-ms="9876" started-at="2018-01-04T20:19:38Z" finished-at="2018-01-04T20:19:48Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="before" is-config="true" duration-ms="9272" started-at="2018-01-05T05:10:00Z" finished-at="2018-01-05T05:10:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:bjss.test.testCase.TestCase1@3159c4b8]" name="test1" duration-ms="35801" started-at="2018-01-04T20:19:48Z" finished-at="2018-01-04T20:20:24Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="test1" duration-ms="31744" started-at="2018-01-05T05:10:09Z" finished-at="2018-01-05T05:10:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase1@3159c4b8]" name="tearDown" is-config="true" duration-ms="181" started-at="2018-01-04T20:20:24Z" finished-at="2018-01-04T20:20:24Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="tearDown" is-config="true" duration-ms="194" started-at="2018-01-05T05:10:41Z" finished-at="2018-01-05T05:10:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestCase1.test1()[pri:0, instance:bjss.test.testCase.TestCase1@3159c4b8] output={null}]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestCase1.test1()[pri:0, instance:bjss.test.testCase.TestCase1@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase1@3159c4b8]" name="afterTest" is-config="true" duration-ms="618" started-at="2018-01-04T20:20:24Z" finished-at="2018-01-04T20:20:25Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase1@13805618]" name="afterTest" is-config="true" duration-ms="646" started-at="2018-01-05T05:10:41Z" finished-at="2018-01-05T05:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- bjss.test.testCase.TestCase1 -->
-    </test> <!-- Test Example 1 -->
-    <test name="Test Example 2" duration-ms="20756" started-at="2018-01-04T20:20:25Z" finished-at="2018-01-04T20:20:46Z">
-      <class name="bjss.test.testCase.TestCase2">
-        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase2@3327bd23]" name="before" is-config="true" duration-ms="9779" started-at="2018-01-04T20:20:25Z" finished-at="2018-01-04T20:20:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:bjss.test.testCase.TestCase2@3327bd23]" name="test2" duration-ms="10323" started-at="2018-01-04T20:20:35Z" finished-at="2018-01-04T20:20:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase2@3327bd23]" name="tearDown" is-config="true" duration-ms="35" started-at="2018-01-04T20:20:45Z" finished-at="2018-01-04T20:20:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestCase2.test2()[pri:0, instance:bjss.test.testCase.TestCase2@3327bd23] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase2@3327bd23]" name="afterTest" is-config="true" duration-ms="616" started-at="2018-01-04T20:20:45Z" finished-at="2018-01-04T20:20:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- bjss.test.testCase.TestCase2 -->
-    </test> <!-- Test Example 2 -->
-    <test name="Test Example 3" duration-ms="21942" started-at="2018-01-04T20:20:46Z" finished-at="2018-01-04T20:21:07Z">
-      <class name="bjss.test.testCase.TestCase3">
-        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.TestCase3@5383967b]" name="before" is-config="true" duration-ms="11951" started-at="2018-01-04T20:20:46Z" finished-at="2018-01-04T20:20:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="FAIL" signature="test3()[pri:0, instance:bjss.test.testCase.TestCase3@5383967b]" name="test3" duration-ms="6752" started-at="2018-01-04T20:20:58Z" finished-at="2018-01-04T20:21:04Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [S] but found [X]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [S] but found [X]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at bjss.test.pages.OrderHistory.checkItemSize(OrderHistory.java:116)
-	at bjss.test.testCase.TestCase3.test3(TestCase3.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.TestCase3@5383967b]" name="tearDown" is-config="true" duration-ms="390" started-at="2018-01-04T20:21:04Z" finished-at="2018-01-04T20:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test3 status=FAILURE method=TestCase3.test3()[pri:0, instance:bjss.test.testCase.TestCase3@5383967b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:bjss.test.testCase.TestCase3@5383967b]" name="afterTest" is-config="true" duration-ms="2845" started-at="2018-01-04T20:21:05Z" finished-at="2018-01-04T20:21:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- bjss.test.testCase.TestCase3 -->
-    </test> <!-- Test Example 3 -->
-    <test name="Test Example 4" duration-ms="5512" started-at="2018-01-04T20:21:08Z" finished-at="2018-01-04T20:21:13Z">
-      <class name="bjss.test.testCase.CRUD">
-        <test-method status="PASS" signature="before()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="before" is-config="true" duration-ms="37" started-at="2018-01-04T20:21:08Z" finished-at="2018-01-04T20:21:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="Get()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="Get" duration-ms="3176" started-at="2018-01-04T20:21:08Z" finished-at="2018-01-04T20:21:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Get -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="tearDown" is-config="true" duration-ms="25" started-at="2018-01-04T20:21:11Z" finished-at="2018-01-04T20:21:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Get status=SUCCESS method=CRUD.Get()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="deleteExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="deleteExample" duration-ms="614" started-at="2018-01-04T20:21:11Z" finished-at="2018-01-04T20:21:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteExample -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="tearDown" is-config="true" duration-ms="34" started-at="2018-01-04T20:21:11Z" finished-at="2018-01-04T20:21:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteExample status=SUCCESS method=CRUD.deleteExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="postExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="postExample" duration-ms="625" started-at="2018-01-04T20:21:11Z" finished-at="2018-01-04T20:21:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postExample -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="tearDown" is-config="true" duration-ms="22" started-at="2018-01-04T20:21:12Z" finished-at="2018-01-04T20:21:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=postExample status=SUCCESS method=CRUD.postExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="putExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="putExample" duration-ms="942" started-at="2018-01-04T20:21:12Z" finished-at="2018-01-04T20:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- putExample -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:bjss.test.testCase.CRUD@11c9af63]" name="tearDown" is-config="true" duration-ms="32" started-at="2018-01-04T20:21:13Z" finished-at="2018-01-04T20:21:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=putExample status=SUCCESS method=CRUD.putExample()[pri:0, instance:bjss.test.testCase.CRUD@11c9af63] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- bjss.test.testCase.CRUD -->
-    </test> <!-- Test Example 4 -->
-  </suite> <!-- BJSS Test Suit -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

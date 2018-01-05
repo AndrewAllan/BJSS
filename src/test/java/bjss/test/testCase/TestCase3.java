@@ -43,8 +43,7 @@ public class TestCase3 {
 		Thread.sleep(2000);
 		OrderHistory orderHistory = new OrderHistory(driver, test);
 		orderHistory.findOrderByDate("12/27/2017");
-		orderHistory.checkItemSize("X"); // this will fail as the assert will
-											// expect size S
+		orderHistory.checkItemSize("X"); 
 	}
 
 	@AfterMethod
@@ -57,6 +56,7 @@ public class TestCase3 {
 		report.endTest(test);
 		report.flush();
 	}
+	
 
 	@AfterTest
 	public void afterTest() {

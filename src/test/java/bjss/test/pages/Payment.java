@@ -27,12 +27,14 @@ public class Payment {
 	@FindBy(xpath = ".//*[@id='cart_navigation']/button")
 	WebElement BtnConfirmOrder;
 	
+	//clicks the pay by wire payment option
 	public void clickPayByWire(){
 		BtnPayByBankWire.click();
 		test.log(LogStatus.PASS, "click the pay by wire option");
 		log.info("Payment - the pay by wire option has been clicked");	
 	}
 	
+	//clicks the confirm order button
 	public void clickConfirmOrder(){
 		BtnConfirmOrder.click();
 		test.log(LogStatus.PASS, "click the confirm order button");

@@ -28,6 +28,7 @@ public class Woman {
 	@FindBy(xpath = ".//*[@id='center_column']/ul/li[2]/div/div[1]/div")
 	WebElement Item2;
 	
+	//clicks the item 1 quick view
 	public void clickItem1(){
 		Item1.click();
 		driver.switchTo().frame(0);	
@@ -35,6 +36,7 @@ public class Woman {
 		test.log(LogStatus.PASS, "the quick view for item 1 was clicked");
 	}
 	
+	//clicks the item 2 quick view
 	public void clickItem2(){
 		Item2.click();
 		driver.switchTo().frame(0);	
@@ -42,10 +44,10 @@ public class Woman {
 		test.log(LogStatus.PASS, "the quick view for item 2 was clicked");
 	}
 	
+	//returns an instance of the quick view class
 	public ItemQuickView itemQuickView(){
 		ItemQuickView itemQuickView = new ItemQuickView(driver,test);
-		return itemQuickView;
-		
+		return itemQuickView;	
 	}
 	
 }

@@ -21,8 +21,21 @@ public class Menu {
 		test = testIn;
 	}
 	
-	public HeaderMenu headerMenu(){
-		HeaderMenu hMenu = new HeaderMenu(driver,test);
-		return hMenu;
+	@FindBy(xpath=".//*[@id='header']/div[2]/div/div/nav/div[2]/a")
+	WebElement MnuSignOut;
+	
+	@FindBy(xpath = ".//*[@id='block_top_menu']/ul/li[1]/a")
+	WebElement MnuWoman;
+	
+	//clicks the signout button in the menu
+	public void clickSignOut(){
+		MnuSignOut.click();
+		test.log(LogStatus.PASS, "click signout from menu");
+		log.info("User Menu - the sign out menu opption has been clicked");	
+	}
+	
+	//clicks the woman menu option
+	public void clickMenuOptionWoman(){
+		MnuWoman.click();
 	}
 }

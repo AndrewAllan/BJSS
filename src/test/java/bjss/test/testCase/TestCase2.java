@@ -41,7 +41,7 @@ public class TestCase2 {
 		driver.findElement(By.xpath(".//*[@id='center_column']/div/div[1]/ul/li[1]/a/span")).click();
 		Thread.sleep(2000);
 		OrderHistory orderHistory = new OrderHistory(driver, test);
-		orderHistory.findOrderByDate("12/27/2017");
+		orderHistory.findOrderByDate("12/31/2017");
 		orderHistory.selectItem(1);
 		Thread.sleep(2000);
 		orderHistory.sendMessage("new mess");
@@ -51,15 +51,6 @@ public class TestCase2 {
 		orderHistory.messageVisible("new mess");
 	}
 
-	/*
-	 * @Test public void test2() throws InterruptedException{
-	 * driver.findElement(By.xpath(
-	 * ".//*[@id='center_column']/div/div[1]/ul/li[1]/a/span")).click();
-	 * Thread.sleep(2000); OrderHistory orderHistory = new OrderHistory(driver);
-	 * orderHistory.findOrderByDate("12/27/2017");
-	 * orderHistory.checkDressSize("X"); // this will fail as the assert will
-	 * expect size L }
-	 */
 	@AfterMethod
 	public void tearDown(ITestResult testResults) throws IOException {
 		if (testResults.getStatus() == ITestResult.FAILURE) {
@@ -70,6 +61,7 @@ public class TestCase2 {
 		report.endTest(test);
 		report.flush();
 	}
+	
 
 	@AfterTest
 	public void afterTest() {

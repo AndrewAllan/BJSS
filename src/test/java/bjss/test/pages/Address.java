@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -26,6 +25,7 @@ public class Address {
 	@FindBy(name = "processAddress")
 	WebElement BtnProccedToCheckOut;
 	
+	//clicks the procced to checkout button
 	public void clickProccedToCheckout(){
 		BtnProccedToCheckOut.click();
 		test.log(LogStatus.PASS, "click procced to checkout");

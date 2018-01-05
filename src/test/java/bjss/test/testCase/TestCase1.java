@@ -16,8 +16,8 @@ import Utilities.Screenshots;
 import bjss.test.browsers.Chrome;
 import bjss.test.pages.Menu;
 import bjss.test.pages.Order;
-import bjss.test.pages.Shopping;
 import bjss.test.pages.Signin;
+import bjss.test.pages.Woman;
 
 
 
@@ -35,31 +35,30 @@ public class TestCase1 {
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		Signin signin = new Signin(driver,test);	
 		signin.signin("TestAutomation@BJSSTest.com","BJSSTest");
-		//TestAutomation@BJSSTest.com
-		//
-		
+		//TestAutomation@BJSSTest.com	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// wait for the web page to load
 	}
 	
 	@Test
 	public void test1() throws InterruptedException{
 		Thread.sleep(2000);
-		Shopping shopping = new Shopping(driver,test);
-		shopping.clickMenuOptionWoman(); // clicking the menu option woman 
+		Menu menu = new Menu(driver,test);
+		menu.clickMenuOptionWoman(); 
 		Thread.sleep(1000);
-		shopping.woman().clickItem1(); // clicks the quick view for the first item
+		Woman woman = new Woman(driver,test);
+		woman.clickItem1(); 
 		Thread.sleep(1000);
-		shopping.woman().itemQuickView().selectSize("L"); // slects size L within quick view
+		woman.itemQuickView().selectSize("L"); 
 		Thread.sleep(1000);
-		shopping.woman().itemQuickView().addToCart(); // adds the item to the cart
+		woman.itemQuickView().addToCart(); 
 		Thread.sleep(3000);
-		shopping.woman().itemQuickView().continueShopping(); // selects to continue shopping
+		woman.itemQuickView().continueShopping(); 
 		Thread.sleep(2000);
-		shopping.woman().clickItem2(); // clicks the second item's quick view
+		woman.clickItem2(); 
 		Thread.sleep(2000);	
-		shopping.woman().itemQuickView().addToCart(); // 
+		woman.itemQuickView().addToCart(); // 
 		Thread.sleep(3000);		
-		shopping.woman().itemQuickView().checkout();;
+		woman.itemQuickView().checkout();;
 		Thread.sleep(1000);
 		Order order = new Order(driver,test);
 		order.summary().checkItem1Size("L");
@@ -74,8 +73,7 @@ public class TestCase1 {
 		order.shipping().clickProccedToCheckout();
 		order.payment().clickPayByWire();
 		order.payment().clickConfirmOrder();
-		Menu menu = new Menu(driver,test);
-		menu.headerMenu().clickSignOut();
+		menu.clickSignOut();
 	}
 	
 	@AfterMethod
@@ -88,6 +86,7 @@ public class TestCase1 {
 		report.endTest(test);
 		report.flush();
 		}
+	
 	
 	@AfterTest
 	public void afterTest(){
