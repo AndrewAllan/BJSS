@@ -36,17 +36,19 @@ TEST 4: API CALLS = (right click the class CRUD and select testNG to run the 4th
 ```
 TO RUN ALL TESTS RIGHT CLICK THE XML FILE TestSuit.xml AND RUN AS TESTNG SUIT
 
-### Break down into end to end tests
+### Reporting
 
-Explain what these tests test and why
+the reporting i have used is extent reporting the file output can be found in the reporting folder 
 
-```
-Give an example
-```
+Note: the file should be moved or deleted after each run if this is not done the testcases will continue to be added to the same report
 
-### And coding style tests
+### ScreenShots
 
-Explain what these tests test and why
+when a test fails it should take a screenshot and store it in the location ./errorScreenshots the screen shot should also be added to the extent report.
+
+### logging
+
+i have used log4j for loggin purposes i have set it to output both to file and to console
 
 ```
 Give an example
@@ -58,30 +60,15 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [testNG](http://testng.org/docs/) - Testing Framework
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Selenium](http://www.seleniumhq.org/) - Used For Browser Automation
+* [Rest Assured](http://rest-assured.io/) - Used For RESTful API Testing
+* [Extent Reporting](http://extentreports.com/) - Used For Reporting
 
-## Contributing
+## Known issues
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* some page object classes might only have one locator this was done purely from a forward thinking perspective if it was a real project
+* within test 2 it was specified that i select the order created in test 1 by date and time but only date was displayed because of this
+if more than one order is made on that date the test would fail as the for loop would have more than one web element due to this i have selected the first element displayed which is always the newest i have also coded finding the order by date only
+* within test 1 i was asked to verify the price and size of each item i made the asserts user input as opposed to carrying the values from the quickview
