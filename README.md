@@ -4,7 +4,7 @@ This is demo test automation the automation was developed in java
 
 ## Getting Started
 
-download the project source from the repo - https://github.com/AndrewAllan/BJSS.git
+download the project source from the repo - https://github.com/AndrewAllan/Example-of-Test-Automation.git
 
 import the maven project into the eclipse IDE
 
