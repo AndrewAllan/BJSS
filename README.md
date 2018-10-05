@@ -1,6 +1,6 @@
-# BJSS
 
-This is the demo test automation requested by BJSS the automation was developed in java
+
+This is demo test automation the automation was developed in java
 
 ## Getting Started
 
